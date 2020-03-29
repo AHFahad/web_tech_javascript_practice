@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".onclick").click(function(){
+    alert("click event occured");
+  });
+});
+$(document).ready(
+    function(){
+        $(".dblclick").dblclick(
+            function(){
+                alert("double click even occur");
+            }
+        );
+        $(".mouseenter").mouseenter(function(){
+            alert("mouse enter even occur");
+        });
+        $(".mouseleave").mouseleave(function(){
+            alert("mouse leave event occur");
+        });
+        $(".mousedown").mousedown(function(){
+            alert("mouse down event occur");
+        });
+        $(".mouseup").mouseup(function(){
+            alert("mouse up event occur");
+        });
+        $(".hover").hover(function(){
+            alert("mouse hover occur");
+        },function(){
+            alert("mouse leave");
+        });
+    }
+);
+
+
+</script>
+</head>
+<body>
+
+
+<p class="onclick">Click event</p>
+<p class="dblclick">double click event</p>
+<p class="mouseleave">mouse leave event</p>
+
+<p class="mouseenter">mouse enter</p>
+<p class="mousedown">dawn event</p>
+<p class="mouseup">mouseup event</p>
+<p class="hover">hover event</p>
+
+
+</body>
+</html>

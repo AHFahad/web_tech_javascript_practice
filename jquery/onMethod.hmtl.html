@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("h2").on({
+        mouseenter:function(){
+            $(this).css("background-color","red");
+        },
+        mouseleave:function(){
+            $(this).css("background-color","blue");
+        },
+        click:function(){
+            $(this).css("background-color","lightgreen");
+        }
+    });
+});
+  
+</script>
+</head>
+<body>
+
+<h2>My name is Fahad.</h2>
+
+</body>
+</html>
